@@ -1,0 +1,16 @@
+DECLARE
+    PilihanMie = Varchar
+    JenisBakso = Varchar
+BEGIN
+    input PilihanMie
+    
+    CASE PilihanMie:
+        'Campur':
+            JenisBakso = 'Bakso Campur'
+        'Mie Putih Saja':
+            JenisBakso = 'Bakso dengan Mie Putih'
+        'Mie Kuning Saja':
+            JenisBakso = 'Bakso dengan Mie Kuning'
+
+    Return JenisBakso
+END
